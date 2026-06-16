@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4ei2p4vw5(8cy)%ux!)@9=*mht^^a!$@*5x!!b-63c4k(^1hon'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -56,9 +56,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
-
 CORS_ALLOWED_ORIGINS = [
-    "https://your-vercel-app.vercel.app",  # add after frontend deploy
+    "https://hkmarketinghouse.vercel.app",
 ]
 ROOT_URLCONF = 'core.urls'
 
@@ -122,7 +121,9 @@ USE_I18N = True
 USE_TZ = True
 
 CORS_ALLOW_ALL_ORIGINS = True
-
+DJANGO_SUPERUSER_USERNAME = "admin"
+DJANGO_SUPERUSER_EMAIL = "hkproduction736@gmail.com"
+DJANGO_SUPERUSER_PASSWORD = "hkmarketing736"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
