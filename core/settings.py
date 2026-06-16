@@ -121,7 +121,9 @@ USE_I18N = True
 USE_TZ = True
 
 CORS_ALLOW_ALL_ORIGINS = True
-
+DJANGO_SUPERUSER_USERNAME = "admin"
+DJANGO_SUPERUSER_EMAIL = "hkproduction736@gmail.com"
+DJANGO_SUPERUSER_PASSWORD = "736736"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
