@@ -56,9 +56,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMIddleware',
 ]
-
 CORS_ALLOWED_ORIGINS = [
-    "https://your-vercel-app.vercel.app",  # add after frontend deploy
+    "https://hkmarketinghouse.vercel.app",
 ]
 ROOT_URLCONF = 'core.urls'
 
