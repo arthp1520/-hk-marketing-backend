@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +44,30 @@ INSTALLED_APPS = [
     'corsheaders',
     'bookings',
 ]
+JAZZMIN_SETTINGS = {
+    "site_title": "HK Marketing House",
+    "site_header": "HK Marketing House",
+    "site_brand": "HK Marketing",
+    "site_logo": None,
+    "welcome_sign": "Welcome to HK Marketing House Admin",
+    "copyright": "HK Marketing House 2026",
+    "topmenu_links": [
+        {"name": "Home", "url": "admin:index"},
+        {"name": "View Site", "url": "/"},
+    ],
+    "show_sidebar": True,
+    "navigation_expanded": True,
+    "theme": "darkly",        # dark gold theme
+    "dark_mode_theme": "darkly",
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success",
+    },
+}
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
