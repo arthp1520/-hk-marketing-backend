@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
     'rest_framework',
     'corsheaders',
     'bookings',
@@ -68,6 +67,9 @@ JAZZMIN_SETTINGS = {
         "success": "btn-success",
     },
 }
+
+WHITENOISE_USE_FINDERS = True
+WHITENOISE_AUTOREFRESH = True
 
 
 MIDDLEWARE = [
